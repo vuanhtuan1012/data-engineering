@@ -72,3 +72,10 @@ Go to the line `c.NotebookApp.open_browser = True`
 Go to the line contains `c.FileContentsManager.root_dir`
   - uncomment it
   - change its value `c.FileContentsManager.root_dir = '/your/defined/path'`
+
+## Snippets
+
+- Compress all files and sub-directories in current directory in a file
+```
+!tar chvfz p2.tar.gz *
+```
