@@ -1,13 +1,11 @@
 # Setup in Windows Subsystem for Linux (WSL)
 
-1. Install PostgreSQL
-
+## Install PostgreSQL
 ```
 sudo apt-get -y update
 sudo apt-get -y install postgresql
 sudo apt-get install postgresql-contrib
 ```
-
 - Start postgresql
 ```
 sudo service postgresql start
@@ -48,14 +46,13 @@ psql=# grant all privileges on database studentdb to student;
 psql=# alter user student createdb;
 ```
 
-2. Install psycopg2
-
+## Install `psycopg2`
 ```
 sudo apt install libpq-dev
 pip install psycopg2
 ```
 
-3. Setup jupyter notebook
+## Setup jupyter notebook
 - Install `jupyter`
 ```
 pip install jupyter
