@@ -1,0 +1,49 @@
+# Setup in Windows Subsystem for Linux (WSL)
+
+1. Install PostgreSQL
+> sudo apt-get -y update
+> sudo apt-get -y install postgresql
+> sudo apt-get install postgresql-contrib
+- Start postgresql
+> sudo service postgresql start
+- Check postgresql status
+> service postgresql status
+
+By default a user called **postgres** is made on and the user **postgres** has full superadmin access to entire PostgreSQL instance running on your OS.
+
+Make sure postgresql service is started.
+
+- Create user `student` :
+> sudo -u postgres createuser student
+
+- Create database `studentdb` :
+> sudo -u postgres createdb studentdb
+
+- Give the user `student` password `student` :
+> sudo -u postgres psql
+> psql=# alter user student with encrypted password 'student';
+
+- Grante user `student` privileges on database `studentdb`
+> psql=# grant all privileges on database studentdb to student;
+
+- Grant user `student` the permission to create database
+> psql=# alter user student createdb;
+
+2. Install psycopg2
+> sudo apt install libpq-dev
+> pip install psycopg2
+3. Setup jupyter notebook
+- Install `jupyter`
+> pip install jupyter
+
+- Generate config file and config jupyter notebook
+> jupyter notebook --generate-config
+> vim ~/.jupyter/jupyter_notebook_config.py
+- Set `jupyter notebook` to no browser by default
+Go to the line `c.NotebookApp.open_browser = True`
+  - uncomment it
+  - change to `c.NotebookApp.open_browser = False`
+- Change default root directory
+Go to the line contains `c.FileContentsManager.root_dir`
+  - uncomment it
+  - change its value `c.FileContentsManager.root_dir = '/your/defined/path'`
