@@ -2,4 +2,6 @@
 
 ## Database Schema
 
-![Sparkify Database Schema](images/sparkify_schema.svg)
+<p align="center">
+<img src="images/sparkify_schema" alt="Sparkify Database Schema">
+</p>
