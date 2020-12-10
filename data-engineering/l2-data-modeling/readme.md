@@ -89,3 +89,32 @@ Verify password:
 ```
 !tar chvfz p2.tar.gz *
 ```
+
+## PostgreSQL
+
+- Connect to `psql` command line tool
+```
+sudo -u postgres psql
+```
+
+- List all users
+```
+postgres=# \du
+postgres=# \du+ (more descirption)
+```
+
+- List all databases
+```
+postgres=# \l
+postgres=# \l+
+```
+
+- Connect to a database
+```
+postgres=# \c [db name]
+```
+
+- List all tables in a database
+```
+yourdb=# \dt
+```
