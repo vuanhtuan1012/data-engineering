@@ -118,3 +118,8 @@ postgres=# \c [db name]
 ```
 yourdb=# \dt
 ```
+
+- List all columns of table
+ ```
+yourdb=# \d [table name]
+```
