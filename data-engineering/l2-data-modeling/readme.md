@@ -73,6 +73,16 @@ Go to the line contains `c.FileContentsManager.root_dir`
   - uncomment it
   - change its value `c.FileContentsManager.root_dir = '/your/defined/path'`
 
+- Set password for jupyter notebook to prevent from demanding token
+```
+jupyter notebook password
+```
+```
+Enter password:
+Verify password:
+[NotebookPasswordApp] Wrote hashed password to /your/path/to/jupyter_notebook_config.json
+```
+
 ## Snippets
 
 - Compress all files and sub-directories in current directory in a file
