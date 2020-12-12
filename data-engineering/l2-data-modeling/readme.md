@@ -68,10 +68,11 @@ vim ~/.jupyter/jupyter_notebook_config.py
 Go to the line `c.NotebookApp.open_browser = True`
   - uncomment it
   - change to `c.NotebookApp.open_browser = False`
-- Change default root directory
-Go to the line contains `c.FileContentsManager.root_dir`
+
+- Change default notebook directory
+Go to the line contains `c.NotebookApp.notebook_dir`
   - uncomment it
-  - change its value `c.FileContentsManager.root_dir = '/your/defined/path'`
+  - change its value `c.NotebookApp.notebook_dir = '/your/defined/path'`
 
 - Set password for jupyter notebook to prevent from demanding token
 ```
