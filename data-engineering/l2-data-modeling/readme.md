@@ -65,12 +65,12 @@ vim ~/.jupyter/jupyter_notebook_config.py
 ```
 
 - Set `jupyter notebook` to no browser by default
-Go to the line `c.NotebookApp.open_browser = True`
+  - Go to the line `c.NotebookApp.open_browser = True`
   - uncomment it
   - change to `c.NotebookApp.open_browser = False`
 
 - Change default notebook directory
-Go to the line contains `c.NotebookApp.notebook_dir`
+  - Go to the line contains `c.NotebookApp.notebook_dir`
   - uncomment it
   - change its value `c.NotebookApp.notebook_dir = '/your/defined/path'`
 
