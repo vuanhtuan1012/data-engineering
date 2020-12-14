@@ -156,8 +156,9 @@ Read the **project  specification**  before and during development of your proje
 
 [[DEND] P1 Lessons Cheat Sheet](dend-p1-lessons-cheat-sheet.pdf)
 
----
-ETL stands for Extract, Transform, and Load.
+## Code and Analyses
+
+They are at [data-modeling-with-postgres: Design database for a music app optimizing for queries on song play analysis](https://github.com/vuanhtuan1012/data-modeling-with-postgres)
 
 ## References
 

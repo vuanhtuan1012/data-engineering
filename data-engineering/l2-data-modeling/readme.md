@@ -124,7 +124,3 @@ yourdb=# \dt
  ```
 yourdb=# \d [table name]
 ```
-
-## Code and Analyses
-
-They are at [data-modeling-with-postgres: Design database for a music app optimizing for queries on song play analysis](https://github.com/vuanhtuan1012/data-modeling-with-postgres)
