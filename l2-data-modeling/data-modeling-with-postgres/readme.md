@@ -163,3 +163,4 @@ They are at [data-modeling-with-postgres: Design database for a music app optimi
 ## References
 
 1. [ETL pipeline in Python](https://medium.com/analytics-vidhya/design-an-etl-pipeline-using-pandas-fd42adcb21f7), Vivek Chaudhary, April 2020.
+2. 2. [Creating custom plotting functions with matplotlib](https://towardsdatascience.com/creating-custom-plotting-functions-with-matplotlib-1f4b8eba6aa1), Matias Calderini, April 2020.
