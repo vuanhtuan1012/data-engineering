@@ -84,13 +84,6 @@ Verify password:
 [NotebookPasswordApp] Wrote hashed password to /your/path/to/jupyter_notebook_config.json
 ```
 
-## Snippets
-
-- Compress all files and sub-directories in current directory in a file
-```
-!tar chvfz p2.tar.gz *
-```
-
 ## PostgreSQL
 
 - Connect to `psql` command line tool
