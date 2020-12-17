@@ -84,6 +84,18 @@ Verify password:
 [NotebookPasswordApp] Wrote hashed password to /your/path/to/jupyter_notebook_config.json
 ```
 
+- Start `jupyter notebook` without output
+
+```
+nohup jupyter notebook > ~/jupyter_notebook.log &
+```
+
+- Stop `jupyter notebook`
+```
+ps -ef | grep jupyter
+kill -9 [jupyter-notebook pid]
+```
+
 ## PostgreSQL
 
 - Connect to `psql` command line tool
