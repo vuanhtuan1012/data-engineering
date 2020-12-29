@@ -200,6 +200,7 @@ sudo apt-get update
 # Install Cassandra with APT
 sudo apt-get install cassandra
 ```
+:warning: A new Linux user `cassandra` will get created as part of the installation. The Cassandra service will also be run as this user.
 
 2. Start Cassandra service
 ```
