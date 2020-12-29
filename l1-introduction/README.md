@@ -1,4 +1,3 @@
-
 # Setup in Windows Subsystem for Linux (WSL)
 
 :point_right: [Jupyter notebook](#jupyter-notebook)
@@ -94,18 +93,18 @@ service postgresql status
 
 4. Commandlines interacting with PostgreSQL
 
-- Create user `student` 
+- Create user `student`
 ```
 sudo -u postgres createuser student
 ```
 
 - Give the user `student` password `student`
-``` 
+```
 sudo -u postgres psql
 psql=# alter user student with encrypted password 'student';
 ```
 
-- Create database `studentdb` 
+- Create database `studentdb`
 ```
 sudo -u postgres createdb studentdb
 ```
