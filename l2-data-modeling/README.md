@@ -2,7 +2,9 @@
 # Setup in Windows Subsystem for Linux (WSL)
 
 :point_right: [Jupyter notebook](#jupyter-notebook)
+
 :point_right: [PostgreSQL](#postgresql)
+
 :point_right: [Cassandra](#cassandra)
 
 ## Jupyter notebook
