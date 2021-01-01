@@ -1,12 +1,12 @@
 # Project: Data Warehouse
 
-1. [Introduction](introduction)
-2. [Project Description](project-description)
-3. [Project Datasets](project-datasets)
-4. [Schema for Song Play Analysis](schema-for-song-play-analysis)
-5. [Project Template](project-template)
-6. [Project Steps](project-steps)
-7. [Project Specification](project-specification)
+1. [Introduction](#introduction)
+2. [Project Description](#project-description)
+3. [Project Datasets](#project-datasets)
+4. [Schema for Song Play Analysis](#schema-for-song-play-analysis)
+5. [Project Template](#project-template)
+6. [Project Steps](#project-steps)
+7. [Project Specification](#project-specification)
 
 ## Introduction
 
