@@ -1,4 +1,12 @@
-# Setup in Windows Subsystem for Linux (WSL)
+# Data Modeling
+
+## Lessons Summarization
+
+:point_right: [Relational Data Models](L2_Relational%20Data%20Models.md)
+
+:point_right: NoSQL Data Models
+
+## Setup in Windows Subsystem for Linux (WSL)
 
 :point_right: [Jupyter notebook](#jupyter-notebook)
 
@@ -6,7 +14,7 @@
 
 :point_right: [Cassandra](#cassandra)
 
-## Jupyter notebook
+### Jupyter notebook
 
 This part mentions:
 - [x] install Jupyter notebook
@@ -63,7 +71,7 @@ ps -ef | grep jupyter
 kill -9 [jupyter-notebook pid]
 ```
 
-## PostgreSQL
+### PostgreSQL
 
 This part mentions:
 - [x] install PostgreSQL
@@ -193,7 +201,7 @@ alter role [username] with superuser;
 ```
 
 
-## Cassandra
+### Cassandra
 
 This part mentions:
 - [x] install Cassandra
