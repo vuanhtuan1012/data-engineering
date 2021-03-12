@@ -72,6 +72,7 @@ This part mentions:
 - [x] commandlines interacting with PostgreSQL: create user, set user password, create database, grant an user privileges on a database
 - [x] install Python library to interact with PostgreSQL
 - [x] PostgreSQL command line tool: connect, list all users, list all databases, list all tables in a database, list all columns in a table.
+- [x] common errors
 
 1. Install PostgreSQL
 ```
@@ -162,6 +163,35 @@ yourdb=# \dt
  ```
 yourdb=# \d [table name]
 ```
+
+7. Common errors
+- PostgreSQL warning when create db in jupyter notebook
+```
+WARNING: could not flush dirty data: Function not implemented
+```
+
+Add the following codes at the end of `/etc/postgresql/11/main/postgresql.conf`.
+
+```
+fsync = off
+data_sync_retry = true
+```
+
+then restart postgresql service
+
+```
+sudo service postgresql restart
+```
+- Extension owner error
+```
+ERROR: must be owner of extension plpgsql
+```
+
+Run this command line
+```
+alter role [username] with superuser;
+```
+
 
 ## Cassandra
 
