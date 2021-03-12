@@ -2,7 +2,7 @@
 - [x] [OLAP vs OLTP](#olap-vs-oltp)
 - [x] [Normalization](#normalization)
 - [x] [Denormalization](#denormalization)
-- [x] [Fact vs Dimension Tables](#fact-vs-dimension-tables)
+- [x] [Fact and Dimension Tables](#fact-and-dimension-tables)
 - [x] [Star and Snowflake schemas](#star-and-snowflake-schemas)
 - [x] [Upsert](#upsert)
 - [x] [Terminology](#terminology)
