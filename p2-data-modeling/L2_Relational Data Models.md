@@ -5,6 +5,7 @@
 - [x] [Fact vs Dimension Tables](#fact-vs-dimension-tables)
 - [x] [Star and Snowflake schemas](#star-and-snowflake-schemas)
 - [x] [Upsert](#upsert)
+- [x] [Terminology](#terminology)
 
 ## OLAP vs OLTP
 We can divide IT systems into analytical (OLAP) and transactional (OLTP). In general we can assume that OLTP systems provide source data to data warehouses, whereas OLAP systems help to analyze it.
