@@ -1,5 +1,8 @@
 # Data Modeling
 
+- [x] [Project: Data Modeling with Postgres](https://github.com/vuanhtuan1012/data-modeling-with-postgres)
+- [x] [Project: Data Modeling with Cassandra](https://github.com/vuanhtuan1012/data-modeling-with-cassandra)
+
 ## Lessons Summarization
 
 :point_right: [Relational Data Models](L2_Relational%20Data%20Models.md)
