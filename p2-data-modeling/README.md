@@ -210,8 +210,9 @@ This part mentions:
 - [x] install Cassandra
 - [x] start Cassandra service
 - [x] check Cassandra status
-- [x] commandline connect to the database
+- [x] CQL Commands
 - [x] install Python library to interact with Cassandra
+- [x] remove Cassandra
 
 1. Install Cassandra
 
