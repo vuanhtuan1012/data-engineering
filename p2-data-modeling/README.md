@@ -252,15 +252,49 @@ sudo service cassandra start
 ```
 service cassandra status
 # or
+netstat.exe /an | cat | grep 7199
 nodetool status
 ```
 
-4. Connect to the database
+4. CQL Commands
+- connect to CQL shell
 ```
 cqlsh
+```
+
+- show all keyspaces
+```
+DESCRIBE keyspaces;
+# or
+DESC keyspaces;
+```
+
+- connect to keyspace `udacity`
+```
+use udacity;
+```
+
+- list all tables in a keyspace
+```
+desc tables;
 ```
 
 5. Install Python library  to interact with Cassandra
 ```
 pip install cassandra-driver
+```
+
+6. Remove Cassandra
+```
+sudo apt-get remove --purge "cassandra*"
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+# check cassandra in /etc and /var/lib
+ls /etc | grep cassandra
+ls /var/lib | grep cassandra
+
+# then remove if exist
+rm -rf /etc/cassandra
+rm -rf /var/lib/cassandra
 ```
