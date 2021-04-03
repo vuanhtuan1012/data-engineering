@@ -7,7 +7,7 @@
 
 :point_right: [Relational Data Models](L2_Relational%20Data%20Models.md)
 
-:point_right: NoSQL Data Models
+:point_right: [NoSQL Data Models](L4_NoSQL%20Data%20Models.md)
 
 ## Setup in Windows Subsystem for Linux (WSL)
 
