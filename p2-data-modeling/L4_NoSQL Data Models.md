@@ -112,7 +112,7 @@ Cassandra query language (CQL) is the way to interact with the database and is v
 
 ### Primary Key
 - The PRIMARY KEY is how each row can be uniquely identified and how the data is distributed across the nodes (or servers) in our system.
-- The first element of the PRIMARY KEY is the PARTITION KEY (which will determine the distribution).
+- The **first element** of the PRIMARY KEY is the PARTITION KEY (which will determine the distribution).
 - The PRIMARY KEY is made up of either just the PARTITION KEY or with the addition of CLUSTERING COLUMNS. The PARTITION KEY will determine the distribution of data across the system.
 - The partition key's row value will be hashed (turned into a number) and stored on the node in the system that holds that range of values.
 
@@ -170,7 +170,8 @@ In the example above PRIMARY KEY is a composite key with PARTITION KEY `year` an
 **Notice:**
 - fields in WHERE clause **have to be in order** that they appear in PRIMARY KEY. It means if we have primary keys are `year, album_name` this WHERE clause will result an error `WHERE album_name='Let It Be'`, but these WHERE clauses work well `WHERE year=1970`, `WHERE year=1970 and album_name='Let It Be'`.
 - text in WHERE clause is put in single quotation-marks `'`, not in double quotation-marks `"`.
-- fields not in PARTITION KEYS or CLUSTERING COLUMNS can't be in WHERE clause.
+- fields not in PRIMARY KEY can't be in WHERE, ORDER BY clauses.
+- if a field in PRIMARY KEY appears in WHERE clause, it has to appear after fields which are before it in PRIMARY KEY.
 - Failure to include a WHERE clause will result in an error.
 
 > The WHERE clause must be included to execute queries.
