@@ -280,6 +280,11 @@ use udacity;
 desc tables;
 ```
 
+- show the command used to create table of an existing table `album_library`
+```
+desc album_library;
+```
+
 5. Install Python library  to interact with Cassandra
 ```
 pip install cassandra-driver
