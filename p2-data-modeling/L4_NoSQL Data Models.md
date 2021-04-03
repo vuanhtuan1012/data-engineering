@@ -1,13 +1,14 @@
 # NoSQL Data Models
 
-- [x] Non-Relational Databases
-- [x] Distributed Databases
-- [x] The CAP theorem
-- [x] Importance of Denormalization
-- [x] Cassandra Query Language: CQL
-- [x] Primary Key, Partition Key, and Clustering Column
-- [x] WHERE clause
-- [x] Terminology
+- [x] [Non-Relational Databases](#non-relational-databases)
+- [x] [Distributed Databases](#distributed-databases)
+- [x] [The CAP theorem](#the-cap-theorem)
+- [x] [Importance of Denormalization](#importance-of-denormalization)
+- [x] [Cassandra Query Language: CQL](#cassandra-query-language-cql)
+- [x] [Primary Key, Partition Key, and Clustering Column](#primary-key-partition-key-and-clustering-column)
+- [x] [WHERE clause](#where-clause)
+- [x] [Terminology](#terminology)
+- [x] [Reference](#reference)
 
 > Jupyter notebooks are in files with prefix `L3_`
 
