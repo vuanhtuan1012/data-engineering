@@ -4,7 +4,7 @@ Spark is currently one of the most popular tools for big data analytics. Hadoop 
 
 - [x] What is big data?
 - [x] Hardware behind big data
-- [ ] Introduction to distributed systems
+- [x] Introduction to distributed systems
 - [ ] Brief history of Spark and big data
 - [ ] Common Spark use cases
 - [ ] Other technologies in the big data ecosystem
@@ -58,3 +58,46 @@ For this reason, distributed systems try to minimize shuffling data back and for
 - CPU: 200x faster than memory
 - Memory: 15x faster than SSD
 - SSD: 20x faster than network.
+
+## Introduction to distributed systems
+
+In general parallel computing implies multiple CPUs share the same memory. With distributed computing, each CPU has its own memory. In distributed computing, each computer/machine is connected to the other machines across a network.
+
+### Hadoop Ecosystem
+
+Hadoop is an ecosystem of tools for big data storage and data analysis. Hadoop is an older system than Spark but is still used by many companies. 
+
+The major difference between Hadoop and Spark is how they use memory.
+- Hadoop writes intermediate results to disk
+- whereas Spark tries to keep data in memory whenever possible. This makes Spark faster for many use cases.
+
+Hadoop framework consists of 4 main components:
+- **HDFS** (Hadoop Distributed File System): stores data on commodity machines with applications, hence providing very high aggregate bandwidth across the cluster.
+- Hadoop **MapReduce**: an implementation of the MapReduce programming model for large scale data processing.
+- Hadoop **YARN**: a resource manager that schedules the computation over code of users applications.
+- Hadoop **Common**: contains libraries and utilities needed by other Hadoop modules.
+
+Oftentimes when someone is talking about Hadoop in general terms, they are actually talking about Hadoop MapReduce. However, Hadoop is more than just MapReduce.
+
+### Spark
+Spark, which is **the main focus of this course**, is another big data framework. Spark contains libraries for data analysis, machine learning, graph analysis, and streaming live data.
+
+Spark is **generally faster than Hadoop**. This is because Hadoop writes intermediate results to disk whereas Spark tries to keep intermediate results in memory whenever possible.
+
+- The Hadoop ecosystem includes a distributed file storage system called HDFS (Hadoop Distributed File System).
+- Spark, on the other hand, does not include a file storage system.
+
+You can use Spark on top of HDFS but you do not have to. Spark can read in data from other sources as well such as  [Amazon S3](https://aws.amazon.com/s3/).
+
+### MapReduce
+
+MapReduce is a programming technique for **manipulating large data sets**. "Hadoop MapReduce" is a specific implementation of this programming technique.
+
+The technique works by: first dividing up a large dataset and distributing the data across a cluster.
+- In the **map step**, each data is analyzed and converted into a (key, value) pair.
+- Then these **key-value pairs are shuffled** across the cluster so that all keys are on the same machine.
+- In the **reduce step**, the values with the same keys are combined together.
+
+Terminology:
++ **MapReduce**: a programming technique.
++ **Hadoop MapReduce**: a specific implementation of the programming technique.
