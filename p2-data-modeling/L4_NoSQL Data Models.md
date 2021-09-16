@@ -82,7 +82,7 @@ In theory, that can be an issue but only if you are not constantly updating. If 
 
 ## Importance of Denormalization
 
-The biggest take away when doing data modeling in Apache Cassandra is to **think about the queries first**. There are **no JOINS** in Apache Cassandra.
+The biggest take away when doing data modeling in Apache Cassandra is to **think about the queries first**. There are **no JOINs** in Apache Cassandra.
 
 > Normalized tables in relational database will need to go through the process of denormalization to be able to fit into the Apache Cassandra data model.
 
@@ -90,7 +90,7 @@ The biggest take away when doing data modeling in Apache Cassandra is to **think
 - Denormalization is not just okay, it's a must. There are no joins in Apache Cassandra. We can **only query on one table at a time**.
 - Denormalization must be done for fast reads. Apache Cassandra has been optimized for writes, so no concern about duplicate data.
 - Think queries first.
-- No JOINS.
+- No JOINs.
 - One table per queries is a great strategy.
 
 **Relational database vs. Apache Cassandra:**
@@ -107,7 +107,7 @@ If your business needs calls for ad-hoc queries, these are not a strength of Apa
 
 Cassandra query language (CQL) is the way to interact with the database and is very similar to SQL.
 
-`JOINS`, `GROUP BY`, or subqueries are not in CQL and are not supported by CQL.
+`JOIN`, `GROUP BY`, or subqueries are not in CQL and are not supported by CQL.
 
 ## Primary Key, Partition Key, and Clustering Column
 

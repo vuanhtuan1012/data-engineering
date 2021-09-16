@@ -5,7 +5,7 @@
 - [x] General ETL Concepts
 - [x] ETL for Redshift
 - [x] Building a Redshift Cluster
-- [ ] Optimizing Redshift Table Design
+- [x] Optimizing Redshift Table Design
 - [x] Terminology
 
 ## Why DWH on AWS
@@ -362,5 +362,9 @@ iam.delete_role(RoleName=[YOUR_IAM_ROLE_NAME])
 - Minimizes the query time since each node already has contiguous ranges of rows based on the sorting key.
 - Useful for columns that are used frequently in sorting like the date dimension and its corresponding foreign key in the fact table.
 
-
 ## Terminology
+1. IAM
+2. ARN
+3. EC2
+4. S3
+5. 
