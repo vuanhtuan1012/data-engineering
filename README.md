@@ -7,7 +7,7 @@ My learning path at Udacity. It costs 368e for 5 months study.
 - [x] [Setup in Windows Subsystem for Linux (WSL)](p2-data-modeling)
 - [x] [Project: Data Modeling with Postgres](https://github.com/vuanhtuan1012/data-modeling-with-postgres)
 - [x] [Project: Data Modeling with Cassandra](https://github.com/vuanhtuan1012/data-modeling-with-cassandra)
-- [ ] [Project: Data Warehouse](https://github.com/vuanhtuan1012/data-warehouse)
+- [x] [Project: Data Warehouse](https://github.com/vuanhtuan1012/data-warehouse)
 - [ ] Project: Data Lake
 - [ ] Project: Optimize Your GitHub Profile
 - [ ] Project: Data Pipelines
