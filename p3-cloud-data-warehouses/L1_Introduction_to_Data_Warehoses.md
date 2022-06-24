@@ -56,7 +56,7 @@ Operational Databases:
 
 **Solution:** create 2 processing modes, create a system for them to co-exist.
 
-Data Warehouse is a system (including processes, technologies & data representations) that enables us to support analytical processes.
+> Data Warehouse is a system (including processes, technologies & data representations) that enables us to support analytical processes.
 
 OLTP (Data in) -> DWH -> OLAP (Data out)
 
